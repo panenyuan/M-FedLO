@@ -1,0 +1,56 @@
+{
+    "model_name" : "模型名称",
+	"model_name" : "light_unet_urpc",
+
+    "no_models" : "客户端总数量",
+	"no_models" : 3,
+
+	"labeled_num": "有标签数据量",
+	"labeled_num": 0.1,
+
+	"labeled_bs": "labeled_batch_size per gpu",
+	"labeled_bs": 2,
+
+	"patch_size": "图像大小",
+	"patch_size": [256,256],
+
+	"sign": "Use or not Ge_image",
+	"sign": 1,
+
+    "type" : "数据集信息",
+	"type" : "huaxiFG",
+
+	"global_epochs" : "全局迭代次数",
+	"global_epochs" : 200,
+
+	"local_epochs" : "本地迭代次数",
+	"local_epochs" : 2,
+
+	"k" : "每一轮选用k个客户端参与训练",
+	"k" : 2,
+
+	"batch_size" : "本地训练每一轮的样本数",
+	"batch_size" : 20,
+
+    "notes" : "本地训练的超参数设置",
+	"num_classes": [8,7],
+	"lr" : 1e-3,
+	"lambid": 0.7,
+	"use_swa": 1,
+	"swa_start": 180,
+	"old_nets_pool": "全局模型引导",
+	"old_nets_pool": 1,
+	"temperature": 0.5,
+	"lambda" : 0.2,
+	"dp" : true,
+
+	"C" : 1000,
+
+	"sigma" : [1e-3,1e-4],
+
+	"q" : 0.1,
+
+	"rate": 0.99,
+
+	"W" : 1
+}
